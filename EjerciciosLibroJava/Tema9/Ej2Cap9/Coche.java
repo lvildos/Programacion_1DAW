@@ -20,6 +20,6 @@ public class Coche extends Vehiculo {
   }
 
   public void quemaRueda() {
-    System.out.println("Fffshhhhhhhhhhh");
+    System.out.println("bbbrrrmmmmmh");
   }
 }
