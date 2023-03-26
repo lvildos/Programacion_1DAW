@@ -68,7 +68,6 @@ public class ExpocochesMalaga{
                 System.out.println("Saliendo del programa...");
               break;
 
-              /*************/
 
               default:
                 System.out.println("Opción no válida.");
