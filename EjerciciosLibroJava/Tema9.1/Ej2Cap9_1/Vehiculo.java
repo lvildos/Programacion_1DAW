@@ -8,15 +8,18 @@
 *@LDS
 */
 
+//Esta clase es abstracta, sirviendo de base para sus subclases Bicicleta y Coche
 public abstract class Vehiculo {
   
-  // atributos de clase
+//Atributos de la clase
   private static int kilometrosTotales = 0;
   private static int vehiculosCreados = 0;
   
-  // atributos de instancia
+// Atributo de instancia
   private int kilometrosRecorridos;
   
+
+//Métodos de la clase (3 en total)
   public Vehiculo() {
     this.kilometrosRecorridos = 0;
   }

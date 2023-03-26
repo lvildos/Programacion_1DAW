@@ -14,6 +14,7 @@ public class PruebaVehiculos {
 
   public static void main(String[] args) {
 
+  //  Se crean variables
     int opcion = 0;
     int km;
     
@@ -22,6 +23,7 @@ public class PruebaVehiculos {
 
     Scanner s=new Scanner (System.in);
 
+    //Opciones que van a imprimirse por pantalla para que el usuario elija
     while (opcion != 8) {
       System.out.println("\n1. Anda con la bicicleta");
       System.out.println("2. Haz el caballito con la bicicleta");
@@ -36,6 +38,7 @@ public class PruebaVehiculos {
       
       opcion = s.nextInt();
       
+      // Opciones segun las elecciones anteriores de los usuarios
       switch (opcion) {
         case 1:
           System.out.print("Cuantos kilometros quiere recorrer? ");

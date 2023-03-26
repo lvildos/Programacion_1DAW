@@ -8,15 +8,21 @@
 *@LDS
 */
 
+//La clase bicileta es una subclase de la clase Vehiculo.
 public class Bicicleta extends Vehiculo {
 
-  private int caidas; // número de piñones
+//El atributo de la clase biciclete es "caidas" y solo se puede acceder a él dentro de esta clase (por el private)
+  private int caidas;
   
+//Aquí, el constructur, inicializa el atributo "caídas", 
+//llamando al constructor de la superclase Vehiculo con el "super()"
+
   public Bicicleta(int p) {
     super();
     this.caidas = p;
   }
 
+  //Aquí tenemos el método, que en este caso es hacer el caballito, imprimiendo por pantalla un mensaje
   public void hazCaballito() {
     System.out.println("Mirad como hago el caballitooooo");
   }
