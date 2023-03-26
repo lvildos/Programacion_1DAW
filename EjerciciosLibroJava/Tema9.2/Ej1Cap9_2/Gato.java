@@ -25,7 +25,7 @@ public class Gato {
     System.out.print(this.nombre + ": ");
     if (sardinas >= s) {
       for (int i = 0; i < s; i++) {
-        System.out.print("Ñam...");
+        System.out.print("Nam...");
         sardinas--;
         sardinasComidas++;
       }
