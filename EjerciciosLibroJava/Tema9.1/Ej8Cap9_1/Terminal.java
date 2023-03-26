@@ -31,7 +31,7 @@ public class Terminal{
           t.tiempoConversacion+=segundos;
         }
 
-      // El método toString() imprime las características de las pizzas
+      // El método toString() imprime las características de la conversacion
         public String toString(){
           return "Nº "+this.numero+" - "+this.tiempoConversacion+"s de conversación.";
         }
