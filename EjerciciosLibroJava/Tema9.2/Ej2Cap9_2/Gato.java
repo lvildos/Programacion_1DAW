@@ -1,3 +1,11 @@
+/* Gato.java
+*Cambia el programa anterior de tal forma que los datos de los gatos se
+*introduzcan directamente en el código de la forma gatito[2].setColor("marrón") o
+*bien mediante el constructor, de la forma gatito[3] = new Gato("Garfield", "naranja",
+*"macho"). Muestra a continuación los datos de todos los gatos utilizando un bucle.
+*@LDS
+*/
+
 
 //Aquí se aplican los tres atributos de la clase Gato. Son private, ya que solo se pueden
 //acceder mediante esta clase
