@@ -8,6 +8,8 @@
 *@LDS
 */
 
+import java.util.Scanner;
+
 public class PruebaVehiculos {
 
   public static void main(String[] args) {
@@ -15,52 +17,58 @@ public class PruebaVehiculos {
     int opcion = 0;
     int km;
     
-    Bicicleta bhSpeedrom = new Bicicleta(9);
-    Coche saab93 = new Coche(1900);
+    Bicicleta bicicleta1 = new Bicicleta(9);
+    Coche coche1 = new Coche(1900);
+
+    Scanner s=new Scanner (System.in);
 
     while (opcion != 8) {
       System.out.println("\n1. Anda con la bicicleta");
       System.out.println("2. Haz el caballito con la bicicleta");
       System.out.println("3. Anda con el coche");
       System.out.println("4. Quema rueda con el coche");
-      System.out.println("5. Ver kilometraje de la bicicleta");
-      System.out.println("6. Ver kilometraje del coche");
-      System.out.println("7. Ver kilometraje total");
-      System.out.println("8. Salir");
-      System.out.println("Elige una opción (1-8): ");
+      System.out.println("5. Cambia las ruedas a la bicicleta");
+      System.out.println("6. Ver kilometraje de la bicicleta");
+      System.out.println("7. Ver kilometraje del coche");
+      System.out.println("8. Ver kilometraje total");
+      System.out.println("9. Salir");
+      System.out.println("Elige una opcion (1-9): ");
       
-      opcion = Integer.parseInt(System.console().readLine());
+      opcion = s.nextInt();
       
       switch (opcion) {
         case 1:
-          System.out.print("¿Cuántos kilómetros quiere recorrer? ");
-          km = Integer.parseInt(System.console().readLine());
-          bhSpeedrom.recorre(km);
+          System.out.print("Cuantos kilometros quiere recorrer? ");
+          km = s.nextInt();
+          bicicleta1.recorre(km);
           break;
         case 2:
-          bhSpeedrom.hazCaballito();
+          bicicleta1.hazCaballito();
           break;
         case 3:
-          System.out.print("¿Cuántos kilómetros quiere recorrer? ");
-          km = Integer.parseInt(System.console().readLine());
-          saab93.recorre(km);
+          System.out.print("Cuantos kilometros quiere recorrer? ");
+          km = s.nextInt();
+          coche1.recorre(km);
           break;
         case 4:
-          saab93.quemaRueda();
+          coche1.quemaRueda();
           break;
         case 5:
-          System.out.print("La bicicleta lleva recorridos ");
-          System.out.println(bhSpeedrom.getKilometrosRecorridos() + " Km");
+          System.out.println("La ruedas de la bicicleta han sido cambiadas.");
           break;
         case 6:
-          System.out.print("El coche lleva recorridos ");
-          System.out.println(saab93.getKilometrosRecorridos() + " Km");
+          System.out.print("La bicicleta lleva recorridos ");
+          System.out.println(bicicleta1.getKilometrosRecorridos() + " Km");
           break;
         case 7:
+          System.out.print("El coche lleva recorridos ");
+          System.out.println(coche1.getKilometrosRecorridos() + " Km");
+          break;
+        case 8:
           System.out.print("Los vehículos llevan recorridos ");
           System.out.println(Vehiculo.getKilometrosTotales() + " Km");
         default:
-      } // switch
-    } // while
+      } // Cierra el switch
+    } // Cierra el bucle while
   }
 }

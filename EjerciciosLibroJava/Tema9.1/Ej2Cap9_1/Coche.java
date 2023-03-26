@@ -12,14 +12,14 @@
 
 public class Coche extends Vehiculo {
 
-  private int cilindrada; // cilindrada en cm3
+  private int potencia;
 
   public Coche(int c) {
     super();
-    this.cilindrada = c;
+    this.potencia = c;
   }
 
   public void quemaRueda() {
-    System.out.println("bbbrrrmmmmmh");
+    System.out.println("aasfghaudgfu");
   }
 }

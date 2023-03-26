@@ -10,14 +10,14 @@
 
 public class Bicicleta extends Vehiculo {
 
-  private int pinones; // número de piñones
+  private int caidas; // número de piñones
   
   public Bicicleta(int p) {
     super();
-    this.pinones = p;
+    this.caidas = p;
   }
 
   public void hazCaballito() {
-    System.out.println("Hago el caballito yujuuuuuuu");
+    System.out.println("Mirad como hago el caballitooooo");
   }
 }
