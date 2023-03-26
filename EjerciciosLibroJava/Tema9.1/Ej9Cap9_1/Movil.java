@@ -45,8 +45,8 @@ public class Movil extends Terminal {
   @Override
   public String toString() {
     DecimalFormat formatoEuros = new DecimalFormat("0.00");
-    return "Nº " + this.getNumero()
-            + " - " + this.getTiempoDeConversacion()
+    return "Num " + this.getNumero()
+            + "  " + this.getTiempoDeConversacion()
             + "s de conversación - tarificados "
             + formatoEuros.format(this.totalTarificado) + " euros";
   }
