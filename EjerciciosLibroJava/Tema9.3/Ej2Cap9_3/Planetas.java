@@ -27,12 +27,20 @@ public class Planetas extends Astros{
             muestra+="Cuenta con el siguiente numero de satelites: ";
 
               for(int i=0; i<this.satelites.length; i++){
-                if(this.satelites[i]!=0){
+                if(this.satelites[i]!=null){
                   muestra+="\n  - "+this.satelites[i].getNombre();
                 }
               }
 
           return muestra;
         }
-
+        public void agregarSatelite(Satelites satelite){
+          if(this.numSatelites<this.satelites.length){
+            this.satelites[this.numSatelites]=satelite;
+  
+            this.numSatelites++;
+          }else{
+            System.out.println("No se pueden seguir anadiendo.");
+          }
+        }
 }

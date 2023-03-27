@@ -7,14 +7,16 @@ public abstract class Astros{
     private double masa;
     private double temperaturaMedia;
     private double gravedad;
+    private String nombre;
 
 //Aquí definimos el constructor que inicializa los atributos de la clase
-    public Astros(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad){
+    public Astros(double radioEcuatorial, double rotacionSobreSuEje, double masa, double temperaturaMedia, double gravedad, String nombre){
       this.radioEcuatorial=radioEcuatorial;
       this.rotacionSobreSuEje=rotacionSobreSuEje;
       this.masa=masa;
       this.temperaturaMedia=temperaturaMedia;
       this.gravedad=gravedad;
+      this.nombre=nombre;
     }
 
 //Aqui se definen los métodos de la clase, devolviendo valores de los atributos
@@ -36,6 +38,10 @@ public abstract class Astros{
 
       public double getGravedad(){
         return this.gravedad;
+      }
+
+      public String getNombre(){
+        return this.nombre;
       }
 
       //método definido por las subclases que se heredan de esta clase

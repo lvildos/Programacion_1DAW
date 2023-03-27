@@ -14,15 +14,15 @@ public class Satelites extends Astros{
     //Este método devuelve una cadena de información de otra clase sobre el satélite
       @Override
       public String muestra(){
-        String muestra=("\n---------SATÉLITE---------");
+        String muestra=("Satelite: ");
           muestra+="Su nombre es "+getNombre();
           muestra+="Su radio ecuatorial es de "+getRadioEcuatorial()+" km";
           muestra+="La rotación sobre su eje es de "+getRotacionSobreSuEje()+" horas";
           muestra+="Pesa "+getMasa()+" kg";
           muestra+="Su temperatura media es de "+getTemperaturaMedia()+" grados";
           muestra+="Su gravedad es de "+getGravedad()+" m/s^2";
-          muestra+="Su distancia al sol es de "+this.distanciaAlSol+" km";
-          muestra+="Su orbita alrededor del sol es de "+this.orbitaAlSol+" dias";
+          muestra+="Su distancia al sol es de "+this.distanciaAlPlaneta+" km";
+          muestra+="Su orbita alrededor del sol es de "+this.orbitaPlanetaria+" dias";
           muestra+="Su planeta: "+this.planeta.getNombre();
 
         return muestra;
