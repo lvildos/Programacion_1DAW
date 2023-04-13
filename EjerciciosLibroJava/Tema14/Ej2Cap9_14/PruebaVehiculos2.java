@@ -28,7 +28,10 @@ public class PruebaVehiculos2 {
       System.out.println("9. Salir");
       System.out.println("Elige una opcion (1-9): ");
       
-      opcion = s.nextLine();
+      opcion = s.nextLine();  //se cambia s.nextInt por s.NextLine ya que ahora se podrán introducir letras también 
+
+      //comprobamos si la variable "opcion" es un numero o no. Si lo es, se convierte a entero y se le asigna a la
+      //variable "opcionNum". Si no es un numero, se le asigna un 0 a la variable "opcionNum".
 
       if(isNumeric(opcion)){
         opcionNum=Integer.parseInt(opcion);
@@ -73,6 +76,7 @@ public class PruebaVehiculos2 {
       } // Cierra el switch
     } // Cierra el bucle while
   }
+  //comprueba si la cadena es un numero
   private static boolean isNumeric(String str){
     return str != null && str.matches ("[0-9]+");
   }
