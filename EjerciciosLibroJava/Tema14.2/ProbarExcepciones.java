@@ -26,7 +26,7 @@ public class ProbarExcepciones {
       opcion=s.nextInt();
 
       //Creamos un bloque try-catch para manejar las excepciones que puedan generarse al 
-      //llamar a las funciones que corresponden a cada opción del menú. 
+      //llamar a las funciones que corresponden a cada opción del menú.
 
       try {
         switch (opcion) {
