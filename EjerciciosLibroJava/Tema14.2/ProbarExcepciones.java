@@ -75,7 +75,7 @@ public class ProbarExcepciones {
   //FUNCIONES
 
   //Primera función. La función se llama a sí misma de forma repetida, generando un bucle infinito.
-  public static void funcionStackOverFlow() throws StackOverFlowError {
+  public static void funcionStackOverFlow() throws StackOverflowError {
     funcionStackOverFlow(); 
   }
 
