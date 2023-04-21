@@ -12,7 +12,7 @@ public class NumMax {
     int num=0;
 
     //El siguiente bucle for pedirá 6 número al usuario y creamos una variable booleana.
-    for (int i = 0; i<=5; i++ ); {
+    for (int i = 0; i<=5; i++ ) {
       boolean verdadero= false;
       
       //El siguiente bucle do-while se ejecutará hasta que se introduzca un numero valido (es decir, numero entero).
@@ -25,6 +25,9 @@ public class NumMax {
           if (num>max) {
             max=num;
           }
+
+          verdadero=true;
+          
           //Si no se introduce un numero entero no será valido y se mostrará un mensaje comunicandolo. 
         } catch (Exception e) {
           System.out.println("Caracter no valido. Introduzca un numero entero.");
