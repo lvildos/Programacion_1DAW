@@ -1,5 +1,5 @@
 /* Articulo.java
-*Modificación a ArrayList
+*Uso de Arrays
 *@LDS
 */
 

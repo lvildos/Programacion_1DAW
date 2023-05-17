@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+/* Gestisimal.java
+*Uso de Arrays
+*@LDS
+*/
+
 public class Gestisimal {
 
   // "tamanio" determina el tamaño del array
@@ -142,7 +147,6 @@ public class Gestisimal {
             }
 
             //Si quiere modificar el stock
-            System.out.println("Stock: " + articulos[i].getStock());
             System.out.print("Nuevo stock: ");
             String stockIntroducido = s.nextLine();
             if (!stockIntroducido.equals("")) {
