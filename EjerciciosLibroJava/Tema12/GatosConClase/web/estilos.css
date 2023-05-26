@@ -1,0 +1,59 @@
+/* estilos css por @LVDS*/
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    color: darkseagreen;
+    font-family: "Verdana"; 
+    padding: 40px; background-color: cornsilk;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    color: cornsilk;
+    font-family: "Verdana";
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    color: cornsilk;
+    font-family: "Verdana";
+    
+}
+body{
+    background-color: darkseagreen;
+    
+    
+}
+
+
+.marisol-container {
+  float: left; 
+  margin-right: 10px;
+  
+}
+
+.ruperta-container {
+  float: right;
+  margin-left: 10px;
+  
+}
+
+.esmeralda-container {
+  float: left; 
+  margin-right: 10px;
+  
+}
+
+.come-container {
+  text-align: right;
+}
+
+.accionnutria {
+  font-family: Arial, sans-serif;
+  color: cornsilk;
+  font-size: 20px;
+ 
+}
